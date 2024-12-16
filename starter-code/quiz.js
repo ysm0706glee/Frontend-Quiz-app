@@ -157,7 +157,7 @@ async function handleQuizSubmission() {
   localStorage.setItem("totalQuestions", totalQuestions);
 
   // Redirect to completion page
-  window.location.href = `/starter-code/complete.html?quiz=${encodeURIComponent(
+  window.location.href = `./complete.html?quiz=${encodeURIComponent(
     getQuizQuery()
   )}`;
 }

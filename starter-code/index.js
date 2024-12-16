@@ -40,9 +40,7 @@ async function populateQuizButtons() {
 }
 
 function handleQuizSelection(title) {
-  window.location.href = `/starter-code/quiz.html?quiz=${encodeURIComponent(
-    title
-  )}`;
+  window.location.href = `./quiz.html?quiz=${encodeURIComponent(title)}`;
 }
 
 document.addEventListener("DOMContentLoaded", populateQuizButtons);
