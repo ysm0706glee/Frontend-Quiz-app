@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("total-questions").textContent = totalQuestions;
 
   document.getElementById("play-again-button").addEventListener("click", () => {
-    window.location.href = "/starter-code/index.html";
+    window.location.href = "./index.html";
   });
 });
 

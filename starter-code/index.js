@@ -1,6 +1,6 @@
 async function fetchData() {
   try {
-    const response = await fetch("/starter-code/data.json");
+    const response = await fetch("./data.json");
     const data = await response.json();
     return data;
   } catch (error) {

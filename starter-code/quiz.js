@@ -5,7 +5,7 @@ let selectedOption = null; // Track the selected option
 // Fetch Data Function
 async function fetchData() {
   try {
-    const response = await fetch("/starter-code/data.json");
+    const response = await fetch("./data.json");
     if (!response.ok) throw new Error("Failed to fetch data");
     const data = await response.json();
     return data;
