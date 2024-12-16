@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./quiz.css" />
+    <script src="./quiz.js" defer></script>
+    <title>Frontend Mentor | Frontend quiz app</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="quiz-header">
+        <img id="quiz-icon" src="" alt="" />
+        <h1 id="quiz-title"></h1>
+      </div>
+      <div class="theme-switcher-container">
+        <img
+          class="nav-icon nav-icon-sun"
+          src="./assets/images/icon-sun-dark.svg"
+          alt="Sun Icon"
+        />
+        <label class="switch">
+          <input class="switch-input" type="checkbox" />
+          <span class="switch-slider round"></span>
+        </label>
+        <img
+          class="nav-icon nav-icon-moon"
+          src="./assets/images/icon-moon-dark.svg"
+          alt="Moon Icon"
+        />
+      </div>
+    </header>
+    <main>
+      <section id="quiz-container">
+        <h2 id="question-number"></h2>
+        <p id="question-text"></p>
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <ul class="options" id="options-container"></ul>
+        <div class="navigation">
+          <button class="submit-button" id="submit-button" disabled>
+            Submit Answer
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

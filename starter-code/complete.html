@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./complete.css" />
+    <script src="./complete.js" defer></script>
+
+    <title>Frontend Mentor | Frontend quiz app</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="quiz-header">
+        <img id="quiz-icon" src="" alt="" />
+        <h1 id="quiz-title"></h1>
+      </div>
+      <div class="theme-switcher-container">
+        <img
+          class="nav-icon nav-icon-sun"
+          src="./assets/images/icon-sun-dark.svg"
+          alt="Sun Icon"
+        />
+        <label class="switch">
+          <input class="switch-input" type="checkbox" />
+          <span class="switch-slider round"></span>
+        </label>
+        <img
+          class="nav-icon nav-icon-moon"
+          src="./assets/images/icon-moon-dark.svg"
+          alt="Moon Icon"
+        />
+      </div>
+    </header>
+    <main class="main">
+      <h1>Quiz completed</h1>
+      <h2>You scored...</h2>
+      <div class="score-container">
+        <div></div>
+        <div>
+          <p id="score-value">0</p>
+          <p>out of <span id="total-questions">10</span></p>
+        </div>
+      </div>
+      <button class="play-again-button" id="play-again-button">
+        Play Again
+      </button>
+    </main>
+  </body>
+</html>
